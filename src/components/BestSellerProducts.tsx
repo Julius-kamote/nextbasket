@@ -23,54 +23,55 @@ function BestSellerProducts() {
       <div className="product-list">
         <div>
           <img src={cardFour} alt="" />
-          <h3>Graphic Design</h3>
+          <h5>Graphic Design</h5>
           <p>English Department</p>
           <span>$16.48</span>
-          <span>$16.48</span>
+          <span className="green">$16.48</span>
         </div>
         <div>
           <img src={cardFour} alt="" />
-          <h3>Graphic Design</h3>
+          <h5>Graphic Design</h5>
           <p>English Department</p>
           <span>$16.48</span>
-          <span>$16.48</span>
+          <span className="green">$16.48</span>
         </div>
         <div>
           <img src={cardFour} alt="" />
-          <h3>Graphic Design</h3>
+          <h5>Graphic Design</h5>
           <p>English Department</p>
           <span>$16.48</span>
-          <span>$16.48</span>
+          <span className="green">$16.48</span>
         </div>
         <div>
           <img src={cardFour} alt="" />
-          <h3>Graphic Design</h3>
+          <h5>Graphic Design</h5>
           <p>English Department</p>
           <span>$16.48</span>
-          <span>$16.48</span>
+          <span className="green">$16.48</span>
         </div>
         <div>
           <img src={cardFour} alt="" />
-          <h3>Graphic Design</h3>
+          <h5>Graphic Design</h5>
           <p>English Department</p>
           <span>$16.48</span>
-          <span>$16.48</span>
+          <span className="green">$16.48</span>
         </div>
         <div>
           <img src={cardFour} alt="" />
-          <h3>Graphic Design</h3>
+          <h5>Graphic Design</h5>
           <p>English Department</p>
           <span>$16.48</span>
-          <span>$16.48</span>
+          <span className="green">$16.48</span>
         </div>
         <div>
           <img src={cardFour} alt="" />
-          <h3>Graphic Design</h3>
+          <h5>Graphic Design</h5>
           <p>English Department</p>
           <span>$16.48</span>
-          <span>$16.48</span>
+          <span className="green">$16.48</span>
         </div>
       </div>
+      <button>Load More Products</button>
     </div>
   );
 }
