@@ -13,7 +13,7 @@ function Section1() {
         <div>
           <img src={cardThree} alt="" />
         </div>
-        <div className="test">
+        <div className="two-img">
           <img src={cardTwo} alt="" />
           <img src={cardFour} alt="" />
         </div>
