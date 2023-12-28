@@ -1,3 +1,4 @@
+import AboutUs from "./components/AboutUs";
 import BestSellerProducts from "./components/BestSellerProducts";
 import BestServices from "./components/BestServices";
 import Header from "./components/Header";
@@ -13,6 +14,7 @@ function App() {
       <BestSellerProducts />
       <BestServices />
       <PracticeAdvice />
+      <AboutUs />
     </div>
   );
 }

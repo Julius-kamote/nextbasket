@@ -345,3 +345,65 @@ nav {
     }
   }
 }
+
+//FOR ABOUT US
+
+.about-content {
+  text-align: center;
+  width: 46%;
+  margin: 160px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  gap: 115px;
+
+  .about-details {
+    h2 {
+      color: #252b42;
+      margin: 0 0 50px;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin: 0 0 20px;
+    }
+
+    div {
+      color: #f3cd03;
+      margin: 0 0 10px;
+
+      .star {
+        margin: 3px;
+      }
+    }
+
+    p.text {
+      color: #737373;
+      font-weight: 500;
+      margin: 0 0 20px;
+    }
+
+    p.name {
+      color: #23a6f0;
+      font-weight: 600;
+      margin: 0 0 12px;
+    }
+
+    span {
+      color: #252b42;
+      font-weight: 600;
+    }
+  }
+
+  .about-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    row-gap: 10px;
+    column-gap: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
