@@ -3,30 +3,43 @@ import { MdOutlinePerson } from "react-icons/md";
 import { FiSearch } from "react-icons/fi";
 import { BsCart } from "react-icons/bs";
 import { IoIosHeartEmpty } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
     <nav>
       <div>
         <h1>Bandage</h1>
-        <ul>
-          <li>Home</li>
+        <ul className="links">
           <li>
-            Shop <FiChevronDown />
+            <Link to="/">Home</Link>
           </li>
-          <li>About</li>
-          <li>Blog</li>
-          <li>Contact</li>
-          <li>Pages</li>
+          <li>
+            <Link to="/shop">
+              Shop <FiChevronDown />
+            </Link>
+          </li>
+          <li>
+            <Link to="">About</Link>
+          </li>
+          <li>
+            <Link to="">Blog</Link>
+          </li>
+          <li>
+            <Link to="">Contact</Link>
+          </li>
+          <li>
+            <Link to="">Pages</Link>
+          </li>
         </ul>
       </div>
 
       <ul>
         <li>
           <MdOutlinePerson />
-          <a href="#">Login</a>
+          <Link to="">Login</Link>
           <span> / </span>
-          <a href="#">Register</a>
+          <Link to="">Register</Link>
         </li>
         <li>
           <FiSearch />

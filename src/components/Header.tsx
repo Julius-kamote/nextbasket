@@ -1,7 +1,6 @@
 import { FiPhone } from "react-icons/fi";
 import { TfiEmail } from "react-icons/tfi";
 import { FaYoutube, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
-import Nav from "./Nav";
 
 function Header() {
   return (
@@ -34,7 +33,6 @@ function Header() {
           </li>
         </ul>
       </div>
-      <Nav />
     </>
   );
 }

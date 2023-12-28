@@ -59,7 +59,7 @@ nav {
     justify-content: space-between;
     gap: 150px;
 
-    li {
+    ul.links li a {
       color: #737373;
     }
   }
@@ -72,6 +72,7 @@ nav {
   ul:last-child {
     color: #23a6f0;
     gap: 20px;
+    cursor: pointer;
 
     li {
       display: flex;
