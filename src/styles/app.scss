@@ -97,6 +97,31 @@ nav {
   justify-content: center;
   margin: 80px 0 0;
 
+  .content {
+    position: relative;
+  }
+
+  .details {
+    top: 30px;
+    left: 20px;
+    position: absolute;
+
+    span {
+      color: #2dc071;
+      font-weight: 600;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      color: #252b42;
+    }
+
+    a {
+      color: #252b42;
+      font-weight: 600;
+    }
+  }
+
   .row-2 {
     display: flex;
     flex-direction: column;
@@ -113,7 +138,7 @@ nav {
 
 .product-content {
   text-align: center;
-  width: 46%;
+  width: 860px;
   margin: 160px auto 0;
 
   .product-header {
@@ -238,7 +263,7 @@ nav {
 
 .practice-content {
   text-align: center;
-  width: 55%;
+  width: 860px;
   margin: 160px auto 0;
 
   .practice-header {
@@ -350,7 +375,7 @@ nav {
 
 .about-content {
   text-align: center;
-  width: 46%;
+  width: 860px;
   margin: 160px auto 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0px, 1fr));
@@ -412,21 +437,16 @@ nav {
 // FOR DESIGNING EXPERIENCE
 
 .designing-content {
-  position: relative;
-  margin: 160px auto 0;
-
-  img {
-    width: 100%;
-  }
+  // margin: 160px auto 0;
+  background: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px;
+  margin: 160px 0 0;
 
   .designing-text {
     text-align: center;
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 
     h4 {
       color: #23a6f0;
@@ -455,9 +475,90 @@ nav {
       border-radius: 5px;
       padding: 20px 40px;
       color: white;
-      font-size: 20px;
+      font-size: 14px;
       text-transform: uppercase;
       font-weight: 600;
     }
+  }
+}
+
+// FOR FOOTER
+
+.footer {
+  .footer-header {
+    background-color: #fafafa;
+    padding: 50px 220px 5px;
+
+    .social-media {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 50px;
+    }
+
+    .social-media a {
+      color: #23a6f0;
+      margin-right: 20px;
+      font-size: 20px;
+    }
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0px, 1fr));
+    padding: 50px 220px;
+
+    h2 {
+      font-size: 18px;
+      margin: 0 0 20px;
+    }
+
+    ul li {
+      font-weight: 600;
+      margin-bottom: 10px;
+
+      a {
+        color: #737373;
+      }
+    }
+  }
+
+  .get-in-touch {
+    div {
+      display: flex;
+
+      input {
+        background-color: #f9f9f9;
+        border: 1px solid #e6e6e6;
+        border-radius: 5px 0 0 5px;
+        padding: 20px;
+        width: 185px;
+      }
+
+      input::placeholder {
+        font-weight: 600;
+      }
+
+      button {
+        background-color: #23a6f0;
+        padding: 21px;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        color: white;
+      }
+    }
+    p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #737373;
+    }
+  }
+
+  .all-right-reserved {
+    background-color: #fafafa;
+    padding: 25px 220px;
+    font-weight: 600;
+    color: #737373;
   }
 }
