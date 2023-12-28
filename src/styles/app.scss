@@ -364,6 +364,7 @@ nav {
 
     img {
       border-radius: 50%;
+      border: 3px solid #bdbdbd;
       width: 100px;
       height: 100px;
       margin: 0 0 20px;
@@ -404,6 +405,59 @@ nav {
 
     img {
       width: 100%;
+    }
+  }
+}
+
+// FOR DESIGNING EXPERIENCE
+
+.designing-content {
+  position: relative;
+  margin: 160px auto 0;
+
+  img {
+    width: 100%;
+  }
+
+  .designing-text {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    h4 {
+      color: #23a6f0;
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin: 60px 0;
+    }
+
+    p {
+      color: #737373;
+      font-size: 20px;
+    }
+
+    h3 {
+      color: #23856d;
+      font-size: 40px;
+      margin: 60px 0;
+    }
+
+    button {
+      border: none;
+      background-color: #23a6f0;
+      border-radius: 5px;
+      padding: 20px 40px;
+      color: white;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 600;
     }
   }
 }
