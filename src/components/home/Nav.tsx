@@ -20,16 +20,16 @@ function Nav() {
             </Link>
           </li>
           <li>
-            <Link to="">About</Link>
+            <Link to="coming-soon">About</Link>
           </li>
           <li>
-            <Link to="">Blog</Link>
+            <Link to="coming-soon">Blog</Link>
           </li>
           <li>
-            <Link to="">Contact</Link>
+            <Link to="coming-soon">Contact</Link>
           </li>
           <li>
-            <Link to="">Pages</Link>
+            <Link to="coming-soon">Pages</Link>
           </li>
         </ul>
       </div>
@@ -37,9 +37,9 @@ function Nav() {
       <ul>
         <li>
           <MdOutlinePerson />
-          <Link to="">Login</Link>
+          <Link to="coming-soon">Login</Link>
           <span> / </span>
-          <Link to="">Register</Link>
+          <Link to="coming-soon">Register</Link>
         </li>
         <li>
           <FiSearch />

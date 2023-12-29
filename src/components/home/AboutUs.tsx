@@ -1,6 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
-import cardFour from "../images/card-cover-4.jpg";
+import cardFour from "../../images/home/card-cover-4.jpg";
 
 function AboutUs() {
   return (

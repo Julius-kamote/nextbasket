@@ -1,4 +1,4 @@
-import cardFour from "../images/card-cover-4.jpg";
+import cardFour from "../../images/home/card-cover-4.jpg";
 import { VscChevronRight } from "react-icons/vsc";
 
 function PracticeAdvice() {

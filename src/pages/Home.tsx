@@ -1,10 +1,10 @@
-import AboutUs from "../components/AboutUs";
-import BestSellerProducts from "../components/BestSellerProducts";
-import BestServices from "../components/BestServices";
-import DesigningExperience from "../components/DesigningExperience";
-import Footer from "../components/Footer";
-import PracticeAdvice from "../components/PracticeAdvice";
-import Section1 from "../components/Section1";
+import AboutUs from "../components/home/AboutUs";
+import BestSellerProducts from "../components/home/BestSellerProducts";
+import BestServices from "../components/home/BestServices";
+import DesigningExperience from "../components/home/DesigningExperience";
+import Footer from "../components/home/Footer";
+import PracticeAdvice from "../components/home/PracticeAdvice";
+import Section1 from "../components/home/Section1";
 
 function Home() {
   return (

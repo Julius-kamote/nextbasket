@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Nav from "./components/Nav";
+import Header from "./components/home/Header";
+import Nav from "./components/home/Nav";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import "./styles/home.scss";
 import "./styles/shop.scss";
 import PageNotFound from "./pages/PageNotFound";
+import ComingSoon from "./pages/ComingSoon";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="shop" element={<Shop />}></Route>
+        <Route path="coming-soon" element={<ComingSoon />}></Route>
         <Route path="*" element={<PageNotFound />}></Route>
       </Routes>
     </BrowserRouter>

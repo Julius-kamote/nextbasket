@@ -1,7 +1,7 @@
-import cardOne from "../images/card-cover-1.jpg";
-import cardTwo from "../images/card-cover-2.jpg";
-import cardThree from "../images/card-cover-3.jpg";
-import cardFour from "../images/card-cover-4.jpg";
+import cardOne from "../../images/home/card-cover-1.jpg";
+import cardTwo from "../../images/home/card-cover-2.jpg";
+import cardThree from "../../images/home/card-cover-3.jpg";
+import cardFour from "../../images/home/card-cover-4.jpg";
 
 function Section1() {
   return (
