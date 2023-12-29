@@ -1,3 +1,5 @@
+// FOR PRODUCTS
+
 .product-container {
   background-color: #fafafa;
   padding: 50px 220px;
@@ -130,6 +132,123 @@
           color: black;
         }
       }
+    }
+  }
+}
+
+// FOR ADDITIONAL INFO
+
+.add-info-container {
+  margin: 50px 220px;
+
+  .tab {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    color: #737373;
+    font-weight: 600;
+
+    padding: 0 0 50px;
+    border-bottom: 1px solid #bdbdbd;
+  }
+
+  .tab p:first-child {
+    font-weight: 500;
+  }
+
+  .tab p:last-child span {
+    color: #23856d;
+  }
+
+  .content {
+    display: flex;
+    gap: 300px;
+    margin: 50px 0 0;
+
+    .details {
+      p {
+        padding: 40px 0 40px;
+        color: #737373;
+      }
+    }
+
+    .details p:nth-child(3) {
+      border-left: 3px solid #23856d;
+      padding: 8px 0 8px 20px;
+    }
+
+    div img {
+      width: 500px;
+    }
+  }
+}
+
+// FOR BEST SELLER
+
+.shop-main {
+  .product-content {
+    width: unset;
+    margin: 160px auto 0;
+    padding: 0 260px;
+    background-color: #fafafa;
+
+    .product-header {
+      margin: 0 0 30px;
+
+      p {
+        display: none;
+      }
+
+      h3 {
+        text-align: left;
+        border-bottom: 1px solid #bdbdbd;
+        padding: 50px 0 20px;
+      }
+
+      span {
+        display: none;
+      }
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0px, 1fr));
+      row-gap: 60px;
+      column-gap: 48px;
+
+      .details {
+        background-color: white;
+        text-align: left;
+        padding: 20px;
+        margin: -10px 0 0;
+      }
+
+      img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+      }
+    }
+
+    button {
+      display: none;
+    }
+
+    // FOR LOGOS
+
+    .logos {
+      margin: 50px 0;
+      padding: 30px 0 50px;
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0px, 1fr));
+      gap: 50px;
+      text-align: center;
+    }
+  }
+
+  .footer {
+    .footer-header {
+      background-color: unset;
     }
   }
 }

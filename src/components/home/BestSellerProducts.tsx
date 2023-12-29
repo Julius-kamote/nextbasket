@@ -1,6 +1,8 @@
 // import axios from "axios";
 import { useEffect } from "react";
 import cardFour from "../../images/home/card-cover-4.jpg";
+import LoadMoreButton from "./LoadMoreButton";
+import Logos from "../shop/Logos";
 
 function BestSellerProducts() {
   const getData = async () => {
@@ -29,55 +31,70 @@ function BestSellerProducts() {
       <div className="product-list">
         <div>
           <img src={cardFour} alt="" />
-          <h5>Graphic Design</h5>
-          <p>English Department</p>
-          <span>$16.48</span>
-          <span className="green">$16.48</span>
+          <div className="details">
+            <h5>Graphic Design</h5>
+            <p>English Department</p>
+            <span>$16.48</span>
+            <span className="green">$16.48</span>
+          </div>
         </div>
         <div>
           <img src={cardFour} alt="" />
-          <h5>Graphic Design</h5>
-          <p>English Department</p>
-          <span>$16.48</span>
-          <span className="green">$16.48</span>
+          <div className="details">
+            <h5>Graphic Design</h5>
+            <p>English Department</p>
+            <span>$16.48</span>
+            <span className="green">$16.48</span>
+          </div>
         </div>
         <div>
           <img src={cardFour} alt="" />
-          <h5>Graphic Design</h5>
-          <p>English Department</p>
-          <span>$16.48</span>
-          <span className="green">$16.48</span>
+          <div className="details">
+            <h5>Graphic Design</h5>
+            <p>English Department</p>
+            <span>$16.48</span>
+            <span className="green">$16.48</span>
+          </div>
         </div>
         <div>
           <img src={cardFour} alt="" />
-          <h5>Graphic Design</h5>
-          <p>English Department</p>
-          <span>$16.48</span>
-          <span className="green">$16.48</span>
+          <div className="details">
+            <h5>Graphic Design</h5>
+            <p>English Department</p>
+            <span>$16.48</span>
+            <span className="green">$16.48</span>
+          </div>
         </div>
         <div>
           <img src={cardFour} alt="" />
-          <h5>Graphic Design</h5>
-          <p>English Department</p>
-          <span>$16.48</span>
-          <span className="green">$16.48</span>
+          <div className="details">
+            <h5>Graphic Design</h5>
+            <p>English Department</p>
+            <span>$16.48</span>
+            <span className="green">$16.48</span>
+          </div>
         </div>
         <div>
           <img src={cardFour} alt="" />
-          <h5>Graphic Design</h5>
-          <p>English Department</p>
-          <span>$16.48</span>
-          <span className="green">$16.48</span>
+          <div className="details">
+            <h5>Graphic Design</h5>
+            <p>English Department</p>
+            <span>$16.48</span>
+            <span className="green">$16.48</span>
+          </div>
         </div>
         <div>
           <img src={cardFour} alt="" />
-          <h5>Graphic Design</h5>
-          <p>English Department</p>
-          <span>$16.48</span>
-          <span className="green">$16.48</span>
+          <div className="details">
+            <h5>Graphic Design</h5>
+            <p>English Department</p>
+            <span>$16.48</span>
+            <span className="green">$16.48</span>
+          </div>
         </div>
       </div>
-      <button>Load More Products</button>
+      <LoadMoreButton />
+      <Logos />
     </div>
   );
 }
