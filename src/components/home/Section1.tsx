@@ -7,7 +7,9 @@ function Section1() {
   return (
     <div className="section1">
       <div className="row-1 content">
-        <img src={cardOne} alt="" />
+        <div className="img-container">
+          <img src={cardOne} alt="" />
+        </div>
         <div className="details">
           <span>5 Items</span>
           <h1>Furniture</h1>
@@ -16,7 +18,9 @@ function Section1() {
       </div>
       <div className="row-2">
         <div className="content">
-          <img src={cardThree} alt="" />
+          <div className="img-container">
+            <img className="sm-img" src={cardThree} alt="" />
+          </div>
           <div className="details">
             <span>5 Items</span>
             <h1>Furniture</h1>
@@ -25,7 +29,9 @@ function Section1() {
         </div>
         <div className="two-img">
           <div className="content">
-            <img src={cardTwo} alt="" />
+            <div className="img-container">
+              <img src={cardTwo} alt="" />
+            </div>
             <div className="details">
               <span>5 Items</span>
               <h1>Furniture</h1>
@@ -33,7 +39,9 @@ function Section1() {
             </div>
           </div>
           <div className="content">
-            <img src={cardFour} alt="" />
+            <div className="img-container">
+              <img src={cardFour} alt="" />
+            </div>
             <div className="details">
               <span>5 Items</span>
               <h1>Furniture</h1>

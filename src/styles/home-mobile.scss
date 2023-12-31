@@ -1,0 +1,285 @@
+// FOR TABLET SCREEN
+
+@media screen and (max-width: 1160px) {
+  // FOR HOME TABLET NAV
+
+  .home-mobile-nav {
+    text-align: center;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 20px 0;
+      align-items: center;
+
+      ul {
+        display: flex;
+        gap: 20px;
+
+        li.burger {
+          color: #737373;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    ul.links {
+      padding: 50px 0 0;
+      li {
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #737373;
+      }
+
+      li.active {
+        font-weight: 500;
+      }
+      li a {
+        color: #737373;
+      }
+    }
+  }
+
+  // FOR SECTION1
+
+  .section1 {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+    gap: 38px;
+    width: 80%;
+    margin: 80px auto 0;
+    max-width: max-content;
+
+    .img-container {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      overflow: hidden;
+
+      .sm-img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .row-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 38px;
+    }
+  }
+
+  .two-img {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+    gap: 0px;
+  }
+
+  // FOR BEST SELLER PRODUCTS
+
+  .product-content {
+    width: 560px;
+
+    .product-list {
+      grid-template-columns: repeat(2, minmax(0px, 1fr));
+
+      img {
+        height: 320px;
+      }
+    }
+  }
+
+  // FOR BEST SERVICES
+
+  .services-content {
+    width: 80%;
+  }
+
+  // FOR PRACTICE ADVICE
+
+  .practice-content {
+    width: 360px;
+
+    .practice-list {
+      grid-template-columns: repeat(1, minmax(0px, 1fr));
+      gap: 40px;
+    }
+  }
+
+  //FOR ABOUT US
+
+  .about-content {
+    width: 360px;
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+  }
+
+  // FOR FOOTER
+
+  .footer {
+    .footer-header {
+      padding: 50px 120px 5px;
+
+      .social-media {
+        align-items: baseline;
+        flex-direction: column;
+        border-bottom: none;
+        gap: 20px;
+      }
+    }
+
+    .footer-links {
+      grid-template-columns: repeat(2, minmax(0px, 1fr));
+      padding: 50px 120px;
+      gap: 50px;
+
+      ul li {
+        a {
+          color: #737373;
+          text-wrap: nowrap;
+        }
+      }
+    }
+
+    .all-right-reserved {
+      background-color: #fafafa;
+      padding: 25px 120px;
+      font-weight: 600;
+      color: #737373;
+    }
+  }
+}
+
+// FOR MOBILE SCREEN
+
+@media screen and (max-width: 590px) {
+  // FOR HOME MOBILE NAV
+
+  .home-mobile-nav {
+    text-align: center;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 20px 0;
+      align-items: center;
+
+      ul {
+        display: flex;
+        gap: 20px;
+
+        li.burger {
+          color: #737373;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    ul.links {
+      padding: 50px 0 0;
+      li {
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #737373;
+      }
+
+      li.active {
+        font-weight: 500;
+      }
+      li a {
+        color: #737373;
+      }
+    }
+  }
+
+  // FOR SECTION1
+
+  .section1 {
+    .img-container {
+      width: 280px;
+      height: 280px;
+
+      .sm-img {
+        width: 280px;
+        height: 280px;
+      }
+    }
+  }
+
+  // FOR BEST SELLER PRODUCTS
+
+  .product-content {
+    width: 220px;
+
+    .product-list {
+      grid-template-columns: repeat(1, minmax(0px, 1fr));
+
+      img {
+        height: 280px;
+      }
+    }
+  }
+
+  // FOR BEST SERVICES
+
+  .services-content {
+    width: 40%;
+
+    .services-list {
+      grid-template-columns: repeat(1, minmax(0px, 1fr));
+    }
+  }
+
+  // FOR PRACTICE ADVICE
+
+  .practice-content {
+    width: 300px;
+
+    .practice-list {
+      grid-template-columns: repeat(1, minmax(0px, 1fr));
+      gap: 40px;
+    }
+  }
+
+  //FOR ABOUT US
+
+  .about-content {
+    width: 300px;
+    gap: 50px;
+  }
+
+  // FOR DESIGNING EXPERIENCE
+
+  .designing-content {
+    padding: 70px 30px;
+
+    .designing-text {
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+
+  // FOR FOOTER
+
+  .footer {
+    .footer-header {
+      padding: 50px 30px 5px;
+    }
+
+    .footer-links {
+      grid-template-columns: repeat(1, minmax(0px, 1fr));
+      padding: 50px 30px;
+    }
+
+    .all-right-reserved {
+      text-align: center;
+    }
+  }
+}

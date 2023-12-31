@@ -5,12 +5,14 @@ import Product from "../components/shop/Product";
 
 function Shop() {
   return (
-    <div className="shop-main">
-      <Product />
-      <AdditionalInformation />
-      <BestSellerProducts />
-      <Footer />
-    </div>
+    <>
+      <div className="shop-main">
+        <Product />
+        <AdditionalInformation />
+        <BestSellerProducts />
+        <Footer />
+      </div>
+    </>
   );
 }
 

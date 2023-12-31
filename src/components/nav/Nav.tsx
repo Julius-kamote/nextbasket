@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <nav>
+    <nav className="nav">
       <div>
         <h1>Bandage</h1>
         <ul className="links">
@@ -15,7 +15,7 @@ function Nav() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/shop">
+            <Link to="/shop" className="active">
               Shop <FiChevronDown />
             </Link>
           </li>
@@ -36,7 +36,7 @@ function Nav() {
 
       <ul>
         <li>
-          <MdOutlinePerson />
+          <MdOutlinePerson className="icon" />
           <Link to="coming-soon">Login</Link>
           <span> / </span>
           <Link to="coming-soon">Register</Link>
@@ -46,11 +46,11 @@ function Nav() {
         </li>
         <li>
           <BsCart />
-          <span>1</span>
+          <span className="count">1</span>
         </li>
         <li>
           <IoIosHeartEmpty />
-          <span>1</span>
+          <span className="count">1</span>
         </li>
       </ul>
     </nav>

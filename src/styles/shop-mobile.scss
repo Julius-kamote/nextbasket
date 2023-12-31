@@ -1,0 +1,71 @@
+// FOR HOME MOBILE NAV
+
+@media screen and (max-width: 1160px) {
+  .shop-mobile-nav {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 20px 0;
+      align-items: center;
+
+      ul {
+        display: flex;
+        gap: 20px;
+
+        li.burger {
+          color: #737373;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    ul.links {
+      padding: 50px 0 0;
+
+      li {
+        margin-bottom: 20px;
+      }
+      li a {
+        color: #737373;
+      }
+      a.active {
+        color: #252b42;
+      }
+    }
+
+    ul:last-child {
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        color: #23a6f0;
+      }
+
+      li.log-reg {
+        .icon {
+          font-size: 18px;
+          margin-right: 2px;
+        }
+
+        a {
+          color: #23a6f0;
+          font-weight: 600;
+        }
+
+        span {
+          padding: 0 10px;
+        }
+      }
+      .count {
+        font-size: 12px;
+        padding-left: px;
+      }
+    }
+  }
+}

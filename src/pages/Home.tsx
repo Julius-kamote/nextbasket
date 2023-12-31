@@ -9,15 +9,17 @@ import Section1 from "../components/home/Section1";
 
 function Home() {
   return (
-    <div className="home-main">
-      <Section1 />
-      <BestSellerProducts />
-      <BestServices />
-      <PracticeAdvice />
-      <AboutUs />
-      <DesigningExperience />
-      <Footer />
-    </div>
+    <>
+      <div className="home-main">
+        <Section1 />
+        <BestSellerProducts />
+        <BestServices />
+        <PracticeAdvice />
+        <AboutUs />
+        <DesigningExperience />
+        <Footer />
+      </div>
+    </>
   );
 }
 
