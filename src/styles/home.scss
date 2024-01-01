@@ -44,6 +44,10 @@ body {
   }
 }
 
+.header-shop {
+  padding: 20px 250px;
+}
+
 //FOR NAV
 
 nav {
@@ -105,6 +109,10 @@ nav {
       }
     }
   }
+}
+
+.nav-shop {
+  padding: 20px 250px;
 }
 
 // FOR SECTION1
@@ -229,6 +237,8 @@ nav {
     color: #23a6f0;
     font-weight: 700;
     border-radius: 5px;
+    text-wrap: nowrap;
+    cursor: pointer;
   }
 
   .logos {

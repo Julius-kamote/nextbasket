@@ -7,6 +7,7 @@ import { FaEye } from "react-icons/fa";
 import one from "../../images/shop/1.jpg";
 import two from "../../images/shop/2.png";
 import three from "../../images/shop/3.jpg";
+import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 
 function Product() {
   return (
@@ -21,9 +22,13 @@ function Product() {
         </Link>
       </div>
       <div className="content">
-        <div className="img">
-          <img src={one} alt="" className="big-img" />
-          <div>
+        <div className="container-img">
+          <div className="big-img">
+            <img src={one} alt="" className="l-img" />
+            <BsChevronRight className="right" />
+            <BsChevronLeft className="left" />
+          </div>
+          <div className="two-img">
             <img src={two} alt="" />
             <img src={three} alt="" />
           </div>

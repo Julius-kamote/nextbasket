@@ -4,7 +4,7 @@ function AdditionalInformation() {
   return (
     <div className="add-info-container">
       <div className="tab">
-        <p>Description</p>
+        <p className="desc">Description</p>
         <p>Additional Information</p>
         <p>
           Review <span>(0)</span>

@@ -1,4 +1,4 @@
-// FOR TABLET SCREEN
+// FOR HOME TABLET SCREEN
 
 @media screen and (max-width: 1160px) {
   // FOR HOME TABLET NAV
@@ -46,7 +46,7 @@
   .section1 {
     display: grid;
     grid-template-columns: repeat(1, minmax(0px, 1fr));
-    gap: 38px;
+    gap: 25px;
     width: 80%;
     margin: 80px auto 0;
     max-width: max-content;
@@ -71,7 +71,7 @@
     .row-2 {
       display: flex;
       flex-direction: column;
-      gap: 38px;
+      gap: 25px;
     }
   }
 
@@ -85,6 +85,7 @@
 
   .product-content {
     width: 560px;
+    margin: 100px auto 0;
 
     .product-list {
       grid-template-columns: repeat(2, minmax(0px, 1fr));
@@ -148,14 +149,14 @@
 
     .all-right-reserved {
       background-color: #fafafa;
-      padding: 25px 120px;
+      padding: 25px 70px;
       font-weight: 600;
       color: #737373;
     }
   }
 }
 
-// FOR MOBILE SCREEN
+// FOR HOME MOBILE SCREEN
 
 @media screen and (max-width: 590px) {
   // FOR HOME MOBILE NAV

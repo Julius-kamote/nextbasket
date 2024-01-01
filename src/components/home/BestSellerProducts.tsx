@@ -1,25 +1,40 @@
-// import axios from "axios";
-import { useEffect } from "react";
-import cardFour from "../../images/home/card-cover-4.jpg";
-import LoadMoreButton from "./LoadMoreButton";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import Logos from "../shop/Logos";
+import { useLocation } from "react-router-dom";
+
+type dataType = {
+  id: number;
+  images: string;
+};
 
 function BestSellerProducts() {
-  const getData = async () => {
-    // const response = await axios.get(
-    //   "https://dummyjson.com/products/category/smartphones/furniture"
-    // );
-    // const products = await response.data;
-    // console.log("TTTT", products);
+  const location = useLocation();
+  const path = location.pathname === "/";
+  const [product, setProduct] = useState<dataType[] | any>([]);
+  const [limit, setLimit] = useState(path ? 10 : 8);
+  const [loading, setLoading] = useState(false);
 
-    fetch("https://dummyjson.com/products/category/fragrances")
-      .then((res) => res.json())
-      .then(console.log);
+  const loadMore = () => {
+    setLimit(limit + 10);
+  };
+
+  const url = `https://dummyjson.com/products?limit=` + limit;
+
+  const getData = async () => {
+    setLoading(false);
+    const response = await axios.get(url);
+    setLoading(true);
+    const data = await response.data.products;
+
+    setProduct(data);
+    console.log("TTTT", data);
+    console.log("YYYY", loading);
   };
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [limit]);
 
   return (
     <div className="product-content">
@@ -28,72 +43,29 @@ function BestSellerProducts() {
         <h3>Bestseller Products</h3>
         <span>Problem trying to resolve the conflict between</span>
       </div>
+
       <div className="product-list">
-        <div>
-          <img src={cardFour} alt="" />
-          <div className="details">
-            <h5>Graphic Design</h5>
-            <p>English Department</p>
-            <span>$16.48</span>
-            <span className="green">$16.48</span>
+        {product.map((products) => (
+          <div key={products.id}>
+            <img src={products.thumbnail} alt={product.title} />
+            <div className="details">
+              <h5>{products.brand}</h5>
+              <p>{products.title}</p>
+              <span>${products.price}</span>
+              <span className="green">${products.price}</span>
+            </div>
           </div>
-        </div>
-        <div>
-          <img src={cardFour} alt="" />
-          <div className="details">
-            <h5>Graphic Design</h5>
-            <p>English Department</p>
-            <span>$16.48</span>
-            <span className="green">$16.48</span>
-          </div>
-        </div>
-        <div>
-          <img src={cardFour} alt="" />
-          <div className="details">
-            <h5>Graphic Design</h5>
-            <p>English Department</p>
-            <span>$16.48</span>
-            <span className="green">$16.48</span>
-          </div>
-        </div>
-        <div>
-          <img src={cardFour} alt="" />
-          <div className="details">
-            <h5>Graphic Design</h5>
-            <p>English Department</p>
-            <span>$16.48</span>
-            <span className="green">$16.48</span>
-          </div>
-        </div>
-        <div>
-          <img src={cardFour} alt="" />
-          <div className="details">
-            <h5>Graphic Design</h5>
-            <p>English Department</p>
-            <span>$16.48</span>
-            <span className="green">$16.48</span>
-          </div>
-        </div>
-        <div>
-          <img src={cardFour} alt="" />
-          <div className="details">
-            <h5>Graphic Design</h5>
-            <p>English Department</p>
-            <span>$16.48</span>
-            <span className="green">$16.48</span>
-          </div>
-        </div>
-        <div>
-          <img src={cardFour} alt="" />
-          <div className="details">
-            <h5>Graphic Design</h5>
-            <p>English Department</p>
-            <span>$16.48</span>
-            <span className="green">$16.48</span>
-          </div>
-        </div>
+        ))}
       </div>
-      <LoadMoreButton />
+      <div className="load-more-btn">
+        {limit <= 95 ? (
+          <button onClick={loadMore}>
+            {loading ? "Load More Products" : "Loading..."}
+          </button>
+        ) : (
+          ""
+        )}
+      </div>
       <Logos />
     </div>
   );

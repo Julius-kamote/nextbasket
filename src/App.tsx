@@ -16,7 +16,6 @@ import { useMediaQuery } from "react-responsive";
 function App() {
   const location = useLocation();
   const mobileScreen = useMediaQuery({ query: "(max-width: 1160px)" });
-  console.log(location);
 
   return (
     <>

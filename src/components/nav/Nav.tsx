@@ -3,11 +3,13 @@ import { MdOutlinePerson } from "react-icons/md";
 import { FiSearch } from "react-icons/fi";
 import { BsCart } from "react-icons/bs";
 import { IoIosHeartEmpty } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Nav() {
+  const location = useLocation();
+
   return (
-    <nav className="nav">
+    <nav className={location.pathname === "/" ? "nav" : "nav nav-shop"}>
       <div>
         <h1>Bandage</h1>
         <ul className="links">

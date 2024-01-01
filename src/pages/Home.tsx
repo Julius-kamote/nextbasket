@@ -3,7 +3,6 @@ import BestSellerProducts from "../components/home/BestSellerProducts";
 import BestServices from "../components/home/BestServices";
 import DesigningExperience from "../components/home/DesigningExperience";
 import Footer from "../components/home/Footer";
-
 import PracticeAdvice from "../components/home/PracticeAdvice";
 import Section1 from "../components/home/Section1";
 

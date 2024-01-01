@@ -1,10 +1,15 @@
 import { FiPhone } from "react-icons/fi";
 import { TfiEmail } from "react-icons/tfi";
 import { FaYoutube, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 function Header() {
+  const location = useLocation();
+
   return (
-    <div className="header">
+    <div
+      className={location.pathname === "/" ? "header" : "header header-shop"}
+    >
       <div>
         <p>
           <FiPhone /> (225 555-0118)
