@@ -45,11 +45,15 @@ function App() {
       : []
   );
 
+  const wishLength = addCart.length;
+
   const [addWishList, setAddWishList] = useState(
     localStorage.getItem("WishList")
       ? JSON.parse(localStorage.getItem("WishList"))
       : []
   );
+
+  const cartLength = addWishList.length;
 
   const url = `https://dummyjson.com/products/` + productID;
 
@@ -85,7 +89,6 @@ function App() {
 
   const increase = (id) => {
     if (addCart.some((item) => item.id === id)) {
-      console.log("LLLLLLL");
       setAddCart((cart) =>
         addCart.map((item) =>
           item.id === id
@@ -104,7 +107,6 @@ function App() {
 
   const decrease = (id) => {
     if (addCart.some((item) => item.id === id)) {
-      console.log("LLLLLLL");
       setAddCart((cart) =>
         addCart.map((item) =>
           item.id === id
@@ -152,19 +154,33 @@ function App() {
         <>
           {pathLocation ? (
             <HomeMobileNav
-              showCart={showCart}
-              handleShowCart={handleShowCart}
-            />
-          ) : (
-            <ShopMobileNav
-              showCart={showCart}
-              showWishList={showWishList}
+              addToCart={addToCart}
+              addToWistList={addToWistList}
               handleShowCart={handleShowCart}
               handleShowWishList={handleShowWishList}
+              showCart={showCart}
+              showWishList={showWishList}
               addCart={addCart}
+              addWishList={addWishList}
               handleRemove={handleRemove}
               increase={increase}
               decrease={decrease}
+            />
+          ) : (
+            <ShopMobileNav
+              addToCart={addToCart}
+              addToWistList={addToWistList}
+              handleShowCart={handleShowCart}
+              handleShowWishList={handleShowWishList}
+              showCart={showCart}
+              showWishList={showWishList}
+              addCart={addCart}
+              addWishList={addWishList}
+              handleRemove={handleRemove}
+              increase={increase}
+              decrease={decrease}
+              wishLength={wishLength}
+              cartLength={cartLength}
             />
           )}
         </>
@@ -183,6 +199,8 @@ function App() {
             handleRemove={handleRemove}
             increase={increase}
             decrease={decrease}
+            wishLength={wishLength}
+            cartLength={cartLength}
           />
         </>
       )}

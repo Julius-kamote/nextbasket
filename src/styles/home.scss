@@ -160,8 +160,8 @@ nav {
   }
 
   .cart {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 100px 250px 90px auto;
     align-items: center;
     width: 100%;
     color: rgb(73, 73, 73);

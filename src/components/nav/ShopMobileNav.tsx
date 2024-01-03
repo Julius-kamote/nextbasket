@@ -14,9 +14,13 @@ function ShopMobileNav({
   showCart,
   showWishList,
   addCart,
+  addWishList,
+  addToWistList,
   handleRemove,
   increase,
   decrease,
+  wishLength,
+  cartLength,
 }) {
   const [show, setShow] = useState(false);
 
@@ -66,11 +70,11 @@ function ShopMobileNav({
             </li>
             <li>
               <BsCart onClick={handleShowCart} />
-              <span className="count">1</span>
+              <span className="count">{wishLength}</span>
             </li>
             <li>
               <IoIosHeartEmpty onClick={handleShowWishList} />
-              <span className="count">1</span>
+              <span className="count">{cartLength}</span>
             </li>
           </ul>
         </>
@@ -88,7 +92,16 @@ function ShopMobileNav({
       ) : (
         ""
       )}
-      {showWishList ? <WishList handleShowCart={handleShowWishList} /> : ""}
+      {showWishList ? (
+        <WishList
+          handleShowCart={handleShowWishList}
+          addToWistList={addToWistList}
+          addWishList={addWishList}
+          handleRemove={handleRemove}
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 }

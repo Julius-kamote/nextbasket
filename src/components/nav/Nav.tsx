@@ -18,6 +18,8 @@ function Nav({
   handleRemove,
   increase,
   decrease,
+  wishLength,
+  cartLength,
 }) {
   const location = useLocation();
 
@@ -62,11 +64,11 @@ function Nav({
           </li>
           <li>
             <BsCart onClick={handleShowCart} />
-            <span className="count">1</span>
+            <span className="count">{wishLength}</span>
           </li>
           <li>
             <IoIosHeartEmpty onClick={handleShowWishList} />
-            <span className="count">1</span>
+            <span className="count">{cartLength}</span>
           </li>
         </ul>
       </nav>
