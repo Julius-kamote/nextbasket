@@ -54,6 +54,12 @@
           width: 100%;
         }
       }
+
+      .two-img {
+        width: 10px;
+        height: 70px;
+        object-fit: cover;
+      }
     }
 
     .price-details {
@@ -127,7 +133,7 @@
       }
 
       .cta {
-        button {
+        .option {
           border: none;
           background-color: #23a6f0;
           border-radius: 5px;
@@ -139,14 +145,20 @@
           text-wrap: nowrap;
         }
 
-        div {
+        .btn {
           background-color: white;
-          border-radius: 50px;
+          border-radius: 100px;
+          width: 40px;
+          height: 40px;
           border: 1px solid #bdbdbd;
           font-size: 23px;
-          padding: 12px;
+          padding: 5px;
           margin-left: 20px;
           color: black;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }

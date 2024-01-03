@@ -8,8 +8,9 @@ type dataType = {
   images: string;
 };
 
-function BestSellerProducts() {
+function BestSellerProducts({ itemID }) {
   const location = useLocation();
+
   const path = location.pathname === "/";
   const [product, setProduct] = useState<dataType[] | any>([]);
   const [limit, setLimit] = useState(path ? 10 : 8);
@@ -28,8 +29,6 @@ function BestSellerProducts() {
     const data = await response.data.products;
 
     setProduct(data);
-    console.log("TTTT", data);
-    console.log("YYYY", loading);
   };
 
   useEffect(() => {
@@ -46,7 +45,7 @@ function BestSellerProducts() {
 
       <div className="product-list">
         {product.map((products) => (
-          <div key={products.id}>
+          <div key={products.id} onClick={() => itemID(products.id)}>
             <img src={products.thumbnail} alt={product.title} />
             <div className="details">
               <h5>{products.brand}</h5>

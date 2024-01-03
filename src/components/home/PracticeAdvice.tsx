@@ -1,4 +1,6 @@
-import cardFour from "../../images/home/card-cover-4.jpg";
+import one from "../../images/home/01.png";
+import two from "../../images/home/02.png";
+import three from "../../images/home/03.png";
 import { VscChevronRight } from "react-icons/vsc";
 
 function PracticeAdvice() {
@@ -11,7 +13,7 @@ function PracticeAdvice() {
       <div className="practice-list">
         <div>
           <div className="practice-img">
-            <img src={cardFour} alt="" />
+            <img src={one} alt="" />
             <span>New</span>
           </div>
           <div className="card-details">
@@ -67,7 +69,7 @@ function PracticeAdvice() {
         </div>
         <div>
           <div className="practice-img">
-            <img src={cardFour} alt="" />
+            <img src={two} alt="" />
             <span>New</span>
           </div>
           <div className="card-details">
@@ -123,7 +125,7 @@ function PracticeAdvice() {
         </div>
         <div>
           <div className="practice-img">
-            <img src={cardFour} alt="" />
+            <img src={three} alt="" />
             <span>New</span>
           </div>
           <div className="card-details">

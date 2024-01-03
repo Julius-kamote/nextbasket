@@ -4,12 +4,9 @@ import { Link } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 import { BsCart } from "react-icons/bs";
 import { FaEye } from "react-icons/fa";
-import one from "../../images/shop/1.jpg";
-import two from "../../images/shop/2.png";
-import three from "../../images/shop/3.jpg";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 
-function Product() {
+function Product({ product, addToCart, addToWistList, id, title, thumbnail }) {
   return (
     <div className="product-container">
       <div className="breadcrumbs">
@@ -24,17 +21,25 @@ function Product() {
       <div className="content">
         <div className="container-img">
           <div className="big-img">
-            <img src={one} alt="" className="l-img" />
+            <img
+              src={product.thumbnail}
+              alt={product.title}
+              className="l-img"
+            />
             <BsChevronRight className="right" />
             <BsChevronLeft className="left" />
           </div>
           <div className="two-img">
-            <img src={two} alt="" />
-            <img src={three} alt="" />
+            {product.images &&
+              product.images
+                .slice(0, 2)
+                .map((products) => (
+                  <img key={products.id} src={products} alt={product.title} />
+                ))}
           </div>
         </div>
         <div className="price-details">
-          <h3>Floating Phone</h3>
+          <h3>{product.title}</h3>
           <div>
             <FaStar className="star" />
             <FaStar className="star" />
@@ -43,7 +48,7 @@ function Product() {
             <FaRegStar className="star" />
             <p>10 Reviews</p>
           </div>
-          <h2>$1,139.33</h2>
+          <h2>$ {product.price}</h2>
           <p className="availability">
             Availability : <span>In Stock</span>
           </p>
@@ -61,16 +66,26 @@ function Product() {
           </div>
 
           <div className="cta">
-            <button>Select Options</button>
-            <div>
-              <FaRegHeart />
-            </div>
-            <div>
-              <BsCart />
-            </div>
-            <div>
+            <button className="option">Select Options</button>
+            <button className="btn" type="button">
+              <FaRegHeart
+                onClick={() => {
+                  addToWistList(product.id);
+                }}
+              />
+            </button>
+            <button className="btn" type="button">
+              <BsCart
+                type="button"
+                disabled
+                onClick={() => {
+                  addToCart(product.id);
+                }}
+              />
+            </button>
+            <button className="btn">
               <FaEye />
-            </div>
+            </button>
           </div>
         </div>
       </div>

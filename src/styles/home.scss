@@ -115,6 +115,84 @@ nav {
   padding: 20px 250px;
 }
 
+// FOR CART POPUP
+.container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.425);
+
+  .content {
+    text-align: center;
+    position: relative;
+    width: 700px;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    .cart-list {
+      width: 700px;
+      height: 600px;
+      overflow-y: scroll;
+      padding: 70px;
+    }
+  }
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: rgb(73, 73, 73);
+    margin-bottom: 30px;
+
+    img {
+      width: 100px;
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .icon {
+        font-size: 24px;
+
+        cursor: pointer;
+      }
+    }
+
+    button {
+      border: none;
+      background-color: #23a6f0;
+      border-radius: 3px;
+      padding: 8px 18px;
+      cursor: pointer;
+    }
+  }
+}
+
 // FOR SECTION1
 
 .section1 {
@@ -194,6 +272,7 @@ nav {
     grid-template-columns: repeat(5, minmax(0px, 1fr));
     row-gap: 60px;
     column-gap: 30px;
+    cursor: pointer;
 
     img {
       width: 100%;
@@ -420,8 +499,6 @@ nav {
     }
 
     img {
-      border-radius: 50%;
-      border: 3px solid #bdbdbd;
       width: 100px;
       height: 100px;
       margin: 0 0 20px;

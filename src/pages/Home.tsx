@@ -6,12 +6,12 @@ import Footer from "../components/home/Footer";
 import PracticeAdvice from "../components/home/PracticeAdvice";
 import Section1 from "../components/home/Section1";
 
-function Home() {
+function Home({ itemID }) {
   return (
     <>
       <div className="home-main">
         <Section1 />
-        <BestSellerProducts />
+        <BestSellerProducts itemID={itemID} />
         <BestServices />
         <PracticeAdvice />
         <AboutUs />

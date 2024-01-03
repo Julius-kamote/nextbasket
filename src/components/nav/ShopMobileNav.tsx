@@ -5,8 +5,19 @@ import { MdOutlinePerson } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { useState } from "react";
+import Cart from "./Cart";
+import WishList from "./WishList";
 
-function HomeMobileNav() {
+function ShopMobileNav({
+  handleShowCart,
+  handleShowWishList,
+  showCart,
+  showWishList,
+  addCart,
+  handleRemove,
+  increase,
+  decrease,
+}) {
   const [show, setShow] = useState(false);
 
   const onShow = () => {
@@ -15,7 +26,7 @@ function HomeMobileNav() {
 
   return (
     <div className="shop-mobile-nav">
-      <div>
+      <div className="head">
         <h1>Bandage</h1>
         <ul>
           <li className="burger" onClick={onShow}>
@@ -47,18 +58,18 @@ function HomeMobileNav() {
           <ul>
             <li className="log-reg">
               <MdOutlinePerson className="icon" />
-              <Link to="">Login</Link> <span>/</span>{" "}
+              <Link to="">Login</Link> <span>/</span>
               <Link to="">Register</Link>
             </li>
             <li>
               <FiSearch />
             </li>
             <li>
-              <BsCart />
+              <BsCart onClick={handleShowCart} />
               <span className="count">1</span>
             </li>
             <li>
-              <IoIosHeartEmpty />
+              <IoIosHeartEmpty onClick={handleShowWishList} />
               <span className="count">1</span>
             </li>
           </ul>
@@ -66,8 +77,20 @@ function HomeMobileNav() {
       ) : (
         ""
       )}
+      {showCart ? (
+        <Cart
+          handleShowCart={handleShowCart}
+          addCart={addCart}
+          handleRemove={handleRemove}
+          increase={increase}
+          decrease={decrease}
+        />
+      ) : (
+        ""
+      )}
+      {showWishList ? <WishList handleShowCart={handleShowWishList} /> : ""}
     </div>
   );
 }
 
-export default HomeMobileNav;
+export default ShopMobileNav;
