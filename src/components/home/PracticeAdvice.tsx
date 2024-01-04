@@ -18,9 +18,9 @@ function PracticeAdvice() {
           </div>
           <div className="card-details">
             <div className="social-media">
-              <a href="">Google</a>
-              <a href="">Trending</a>
-              <a href="">New</a>
+              <a href="#">Google</a>
+              <a href="#">Trending</a>
+              <a href="#">New</a>
             </div>
             <h4>
               Loudest à la Madison #1 <br /> (L'integral)
@@ -61,7 +61,7 @@ function PracticeAdvice() {
                 <span>10 comments</span>
               </p>
             </div>
-            <a href="">
+            <a href="#">
               Learn More
               <VscChevronRight />
             </a>
@@ -74,9 +74,9 @@ function PracticeAdvice() {
           </div>
           <div className="card-details">
             <div className="social-media">
-              <a href="">Google</a>
-              <a href="">Trending</a>
-              <a href="">New</a>
+              <a href="#">Google</a>
+              <a href="#">Trending</a>
+              <a href="#">New</a>
             </div>
             <h4>
               Loudest à la Madison #1 <br /> (L'integral)
@@ -117,7 +117,7 @@ function PracticeAdvice() {
                 <span>10 comments</span>
               </p>
             </div>
-            <a href="">
+            <a href="#">
               Learn More
               <VscChevronRight />
             </a>
@@ -130,9 +130,9 @@ function PracticeAdvice() {
           </div>
           <div className="card-details">
             <div className="social-media">
-              <a href="">Google</a>
-              <a href="">Trending</a>
-              <a href="">New</a>
+              <a href="#">Google</a>
+              <a href="#">Trending</a>
+              <a href="#">New</a>
             </div>
             <h4>
               Loudest à la Madison #1 <br /> (L'integral)
@@ -173,7 +173,7 @@ function PracticeAdvice() {
                 <span>10 comments</span>
               </p>
             </div>
-            <a href="">
+            <a href="#">
               Learn More
               <VscChevronRight />
             </a>

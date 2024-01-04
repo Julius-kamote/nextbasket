@@ -7,13 +7,13 @@ function Footer() {
         <div className="social-media">
           <h1>Bandage</h1>
           <div>
-            <a href="">
+            <a href="#">
               <FaFacebook />
             </a>
-            <a href="">
+            <a href="#">
               <FaInstagram />
             </a>
-            <a href="">
+            <a href="#">
               <FaTwitter />
             </a>
           </div>
@@ -23,61 +23,61 @@ function Footer() {
         <ul>
           <h2>Company Info</h2>
           <li>
-            <a href="">About Us</a>
+            <a href="#">About Us</a>
           </li>
           <li>
-            <a href="">Carrier</a>
+            <a href="#">Carrier</a>
           </li>
           <li>
-            <a href="">We are hiring</a>
+            <a href="#">We are hiring</a>
           </li>
           <li>
-            <a href="">Blog</a>
+            <a href="#">Blog</a>
           </li>
         </ul>
         <ul>
           <h2>Legal</h2>
           <li>
-            <a href="">About Us</a>
+            <a href="#">About Us</a>
           </li>
           <li>
-            <a href="">Carrier</a>
+            <a href="#">Carrier</a>
           </li>
           <li>
-            <a href="">We are hiring</a>
+            <a href="#">We are hiring</a>
           </li>
           <li>
-            <a href="">Blog</a>
+            <a href="#">Blog</a>
           </li>
         </ul>
         <ul>
           <h2>Fetures</h2>
           <li>
-            <a href="">Business Marketing</a>
+            <a href="#">Business Marketing</a>
           </li>
           <li>
-            <a href="">User Analytic</a>
+            <a href="#">User Analytic</a>
           </li>
           <li>
-            <a href="">Live Chat</a>
+            <a href="#">Live Chat</a>
           </li>
           <li>
-            <a href="">Unlimited Support</a>
+            <a href="#">Unlimited Support</a>
           </li>
         </ul>
         <ul>
           <h2>Resources</h2>
           <li>
-            <a href="">IOS & Android</a>
+            <a href="#">IOS & Android</a>
           </li>
           <li>
-            <a href="">Watch a Demo</a>
+            <a href="#">Watch a Demo</a>
           </li>
           <li>
-            <a href="">Customers</a>
+            <a href="#">Customers</a>
           </li>
           <li>
-            <a href="">API</a>
+            <a href="#">API</a>
           </li>
         </ul>
         <div className="get-in-touch">

@@ -13,7 +13,7 @@ function Section1() {
         <div className="details">
           <span>5 Items</span>
           <h1>Furniture</h1>
-          <a href="">Read more</a>
+          <a href="#">Read more</a>
         </div>
       </div>
       <div className="row-2">
@@ -24,7 +24,7 @@ function Section1() {
           <div className="details">
             <span>5 Items</span>
             <h1>Furniture</h1>
-            <a href="">Read more</a>
+            <a href="#">Read more</a>
           </div>
         </div>
         <div className="two-img">
@@ -35,7 +35,7 @@ function Section1() {
             <div className="details">
               <span>5 Items</span>
               <h1>Furniture</h1>
-              <a href="">Read more</a>
+              <a href="#">Read more</a>
             </div>
           </div>
           <div className="content">
@@ -45,7 +45,7 @@ function Section1() {
             <div className="details">
               <span>5 Items</span>
               <h1>Furniture</h1>
-              <a href="">Read more</a>
+              <a href="#">Read more</a>
             </div>
           </div>
         </div>
