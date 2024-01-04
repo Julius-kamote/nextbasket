@@ -8,7 +8,7 @@ function Section1() {
     <div className="section1">
       <div className="row-1 content">
         <div className="img-container">
-          <img src={cardOne} alt="" />
+          <img src={cardOne} alt="demoImages" />
         </div>
         <div className="details">
           <span>5 Items</span>
@@ -19,7 +19,7 @@ function Section1() {
       <div className="row-2">
         <div className="content">
           <div className="img-container">
-            <img className="sm-img" src={cardThree} alt="" />
+            <img className="sm-img" src={cardThree} alt="demoImages" />
           </div>
           <div className="details">
             <span>5 Items</span>
@@ -30,7 +30,7 @@ function Section1() {
         <div className="two-img">
           <div className="content">
             <div className="img-container">
-              <img src={cardTwo} alt="" />
+              <img src={cardTwo} alt="demoImages" />
             </div>
             <div className="details">
               <span>5 Items</span>
@@ -40,7 +40,7 @@ function Section1() {
           </div>
           <div className="content">
             <div className="img-container">
-              <img src={cardFour} alt="" />
+              <img src={cardFour} alt="demoImages" />
             </div>
             <div className="details">
               <span>5 Items</span>

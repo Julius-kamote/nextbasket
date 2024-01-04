@@ -16,7 +16,7 @@ function AboutUs() {
     <div className="about-content">
       <div className="about-details">
         <h2>What they say about us</h2>
-        <img src={curve} alt="" />
+        <img src={curve} alt="demoImages" />
         <div>
           <FaStar className="star" />
           <FaStar className="star" />
@@ -33,15 +33,15 @@ function AboutUs() {
         <span>Designer</span>
       </div>
       <div className="about-gallery">
-        <img src={one} alt="" />
-        <img src={two} alt="" />
-        <img src={three} alt="" />
-        <img src={four} alt="" />
-        <img src={five} alt="" />
-        <img src={six} alt="" />
-        <img src={seven} alt="" />
-        <img src={eight} alt="" />
-        <img src={nine} alt="" />
+        <img src={one} alt="demoImages" />
+        <img src={two} alt="demoImages" />
+        <img src={three} alt="demoImages" />
+        <img src={four} alt="demoImages" />
+        <img src={five} alt="demoImages" />
+        <img src={six} alt="demoImages" />
+        <img src={seven} alt="demoImages" />
+        <img src={eight} alt="demoImages" />
+        <img src={nine} alt="demoImages" />
       </div>
     </div>
   );

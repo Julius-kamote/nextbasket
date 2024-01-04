@@ -8,12 +8,12 @@ import logoSix from "../../images/shop/logo6.png";
 function Logos() {
   return (
     <div className="logos">
-      <img src={logoOne} alt="" />
-      <img src={logoTwo} alt="" />
-      <img src={logoThree} alt="" />
-      <img src={logoFour} alt="" />
-      <img src={logoFive} alt="" />
-      <img src={logoSix} alt="" />
+      <img src={logoOne} alt="demoImages" />
+      <img src={logoTwo} alt="demoImages" />
+      <img src={logoThree} alt="demoImages" />
+      <img src={logoFour} alt="demoImages" />
+      <img src={logoFive} alt="demoImages" />
+      <img src={logoSix} alt="demoImages" />
     </div>
   );
 }

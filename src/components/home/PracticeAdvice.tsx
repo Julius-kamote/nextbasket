@@ -13,7 +13,7 @@ function PracticeAdvice() {
       <div className="practice-list">
         <div>
           <div className="practice-img">
-            <img src={one} alt="" />
+            <img src={one} alt="demoImages" />
             <span>New</span>
           </div>
           <div className="card-details">
@@ -69,7 +69,7 @@ function PracticeAdvice() {
         </div>
         <div>
           <div className="practice-img">
-            <img src={two} alt="" />
+            <img src={two} alt="demoImages" />
             <span>New</span>
           </div>
           <div className="card-details">
@@ -125,7 +125,7 @@ function PracticeAdvice() {
         </div>
         <div>
           <div className="practice-img">
-            <img src={three} alt="" />
+            <img src={three} alt="demoImages" />
             <span>New</span>
           </div>
           <div className="card-details">

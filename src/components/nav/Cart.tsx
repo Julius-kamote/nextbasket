@@ -25,7 +25,7 @@ function Cart({
         <div className="cart-list">
           {addCart.map((cartlist: any) => (
             <div className="cart" key={cartlist?.id}>
-              <img src={cartlist?.thumbnail} alt="" />
+              <img src={cartlist?.thumbnail} alt="demoImages" />
               <p>{cartlist?.title}</p>
               <div className="quantity">
                 <CiSquareMinus

@@ -23,7 +23,7 @@ function WishList({
         <div className="cart-list">
           {addWishList.map((wishlist: any) => (
             <div className="cart" key={wishlist.id}>
-              <img src={wishlist.thumbnail} alt="" />
+              <img src={wishlist.thumbnail} alt="demoImages" />
               <p>{wishlist.title}</p>
               <div className="quantity">
                 {/* <CiSquareMinus className="icon" />

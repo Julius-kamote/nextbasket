@@ -30,7 +30,7 @@ function AdditionalInformation() {
           </p>
         </div>
         <div>
-          <img src={zeroone} alt="" />
+          <img src={zeroone} alt="demoImages" />
         </div>
       </div>
     </div>
