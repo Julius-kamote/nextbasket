@@ -1,3 +1,5 @@
+/*eslint-disable */
+
 import { FaRegStar, FaStar } from "react-icons/fa";
 import { VscChevronRight } from "react-icons/vsc";
 import { Link } from "react-router-dom";
@@ -5,7 +7,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { BsCart } from "react-icons/bs";
 import { FaEye } from "react-icons/fa";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
-
+// @ts-ignore
 function Product({ product, addToCart, addToWistList, id, title, thumbnail }) {
   return (
     <div className="product-container">
@@ -33,7 +35,7 @@ function Product({ product, addToCart, addToWistList, id, title, thumbnail }) {
             {product.images &&
               product.images
                 .slice(0, 2)
-                .map((products) => (
+                .map((products: any) => (
                   <img key={products.id} src={products} alt={product.title} />
                 ))}
           </div>

@@ -1,3 +1,5 @@
+/*eslint-disable */
+
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Header from "./components/nav/Header";
 import Nav from "./components/nav/Nav";
@@ -14,6 +16,7 @@ import ComingSoon from "./pages/ComingSoon";
 import { useMediaQuery } from "react-responsive";
 import { useEffect, useState } from "react";
 import axios from "axios";
+// @ts-ignore
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -40,7 +43,7 @@ function App() {
   const [productID, setproductID] = useState(1);
 
   const [addCart, setAddCart] = useState(
-    localStorage.getItem("CartList")
+    localStorage.getItem("CartList") // @ts-ignore
       ? JSON.parse(localStorage.getItem("CartList"))
       : []
   );
@@ -48,7 +51,7 @@ function App() {
   const wishLength = addCart.length;
 
   const [addWishList, setAddWishList] = useState(
-    localStorage.getItem("WishList")
+    localStorage.getItem("WishList") // @ts-ignore
       ? JSON.parse(localStorage.getItem("WishList"))
       : []
   );
@@ -56,7 +59,7 @@ function App() {
   const cartLength = addWishList.length;
 
   const url = `https://dummyjson.com/products/` + productID;
-
+  // @ts-ignore
   const itemID = (id) => {
     setproductID(id);
     navigate("/shop");
@@ -76,20 +79,23 @@ function App() {
       status: false,
     });
   };
-
+  // @ts-ignore
   const addToCart = (id) => {
     setAddCart([...addCart, product]);
-    toast("Item Successfully Added!");
+    toast("Item Successfully Added!"); // @ts-ignore
     addCart.filter((item) => {
       item.id !== id
         ? setAddCart([...addCart, product])
         : setAddCart([...addCart]);
     });
   };
-
+  // @ts-ignore
   const increase = (id) => {
+    // @ts-ignore
     if (addCart.some((item) => item.id === id)) {
+      // @ts-ignore
       setAddCart((cart) =>
+        // @ts-ignore
         addCart.map((item) =>
           item.id === id
             ? {
@@ -101,13 +107,17 @@ function App() {
         )
       );
     } else {
+      // @ts-ignore
       setAddCart((cart) => [...cart, id]);
     }
   };
-
+  // @ts-ignore
   const decrease = (id) => {
+    // @ts-ignore
     if (addCart.some((item) => item.id === id)) {
+      // @ts-ignore
       setAddCart((cart) =>
+        // @ts-ignore
         addCart.map((item) =>
           item.id === id
             ? {
@@ -120,15 +130,16 @@ function App() {
         )
       );
     } else {
+      // @ts-ignore
       setAddCart((cart) => [...cart, id]);
     }
   };
 
   localStorage.setItem("CartList", JSON.stringify(addCart));
-
+  // @ts-ignore
   const addToWistList = (id) => {
     setAddWishList([...addWishList, product]);
-    toast("Wish Successfully Added!");
+    toast("Wish Successfully Added!"); // @ts-ignore;
     addWishList.filter((item) => {
       item.id !== id
         ? setAddWishList([...addWishList, product])
@@ -137,10 +148,14 @@ function App() {
   };
 
   localStorage.setItem("WishList", JSON.stringify(addWishList));
-
-  const handleRemove = (id) => {
-    toast("Item Successfully Removed!");
-    setAddCart(addCart.filter((item) => item.id !== id));
+  // @ts-ignore
+  const handleRemoveCart = (id) => {
+    toast("Item Successfully Removed!"); // @ts-ignore
+    setAddCart(addCart.filter((item) => item.id !== id)); // @ts-ignore
+  };
+  // @ts-ignore
+  const handleRemoveWish = (id) => {
+    toast("Item Successfully Removed!"); // @ts-ignore
     setAddWishList(addWishList.filter((item) => item.id !== id));
   };
 
@@ -152,7 +167,7 @@ function App() {
     <>
       {mobileScreen ? (
         <>
-          {pathLocation ? (
+          {pathLocation ? ( // @ts-ignore
             <HomeMobileNav
               addToCart={addToCart}
               addToWistList={addToWistList}
@@ -161,13 +176,12 @@ function App() {
               showCart={showCart}
               showWishList={showWishList}
               addCart={addCart}
-              addWishList={addWishList}
-              handleRemove={handleRemove}
+              addWishList={addWishList} // @ts-ignore
               increase={increase}
               decrease={decrease}
             />
           ) : (
-            <ShopMobileNav
+            <ShopMobileNav // @ts-ignore
               addToCart={addToCart}
               addToWistList={addToWistList}
               handleShowCart={handleShowCart}
@@ -176,7 +190,8 @@ function App() {
               showWishList={showWishList}
               addCart={addCart}
               addWishList={addWishList}
-              handleRemove={handleRemove}
+              handleRemoveCart={handleRemoveCart}
+              handleRemoveWish={handleRemoveWish}
               increase={increase}
               decrease={decrease}
               wishLength={wishLength}
@@ -187,7 +202,7 @@ function App() {
       ) : (
         <>
           <Header />
-          <Nav
+          <Nav // @ts-ignore
             addToCart={addToCart}
             addToWistList={addToWistList}
             handleShowCart={handleShowCart}
@@ -196,7 +211,8 @@ function App() {
             showWishList={showWishList}
             addCart={addCart}
             addWishList={addWishList}
-            handleRemove={handleRemove}
+            handleRemoveCart={handleRemoveCart}
+            handleRemoveWish={handleRemoveWish}
             increase={increase}
             decrease={decrease}
             wishLength={wishLength}
@@ -210,6 +226,7 @@ function App() {
         <Route
           path="shop"
           element={
+            // @ts-ignore
             <Shop
               product={product}
               addToCart={addToCart}

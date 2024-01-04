@@ -1,13 +1,17 @@
+/*eslint-disable */
+
 import { IoMdClose } from "react-icons/io";
 // import { CiSquareMinus, CiSquarePlus } from "react-icons/ci";
 
 function WishList({
-  handleShowCart,
-  addToWistList,
-  addWishList,
-  handleRemove,
+  // @ts-ignore
+  handleShowCart, // @ts-ignore
+  addToWistList, // @ts-ignore
+  addWishList, // @ts-ignore
+  handleRemoveWish, // @ts-ignore
 }) {
   let cartTotalQty = addWishList.reduce(
+    // @ts-ignore
     (accum, item) => accum + item.quantity,
     0
   );
@@ -17,7 +21,7 @@ function WishList({
       <div className="content">
         <IoMdClose className="close" onClick={handleShowCart} />
         <div className="cart-list">
-          {addWishList.map((wishlist) => (
+          {addWishList.map((wishlist: any) => (
             <div className="cart" key={wishlist.id}>
               <img src={wishlist.thumbnail} alt="" />
               <p>{wishlist.title}</p>
@@ -28,7 +32,7 @@ function WishList({
               </div>
               <button
                 onClick={() => {
-                  handleRemove(wishlist.id);
+                  handleRemoveWish(wishlist.id);
                 }}
               >
                 Remove

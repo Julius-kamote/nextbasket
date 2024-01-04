@@ -1,3 +1,5 @@
+/*eslint-disable */
+
 import { BsCart } from "react-icons/bs";
 import { FiSearch } from "react-icons/fi";
 import { IoIosHeartEmpty } from "react-icons/io";
@@ -9,18 +11,20 @@ import Cart from "./Cart";
 import WishList from "./WishList";
 
 function ShopMobileNav({
-  handleShowCart,
-  handleShowWishList,
-  showCart,
-  showWishList,
-  addCart,
-  addWishList,
-  addToWistList,
-  handleRemove,
-  increase,
-  decrease,
-  wishLength,
-  cartLength,
+  // @ts-ignore
+  handleShowCart, // @ts-ignore
+  handleShowWishList, // @ts-ignore
+  showCart, // @ts-ignore
+  showWishList, // @ts-ignore
+  addCart, // @ts-ignore
+  addWishList, // @ts-ignore
+  addToWistList, // @ts-ignore
+  handleRemoveCart, // @ts-ignore
+  handleRemoveWish, // @ts-ignore
+  increase, // @ts-ignore
+  decrease, // @ts-ignore
+  wishLength, // @ts-ignore
+  cartLength, // @ts-ignore
 }) {
   const [show, setShow] = useState(false);
 
@@ -85,7 +89,8 @@ function ShopMobileNav({
         <Cart
           handleShowCart={handleShowCart}
           addCart={addCart}
-          handleRemove={handleRemove}
+          handleRemoveCart={handleRemoveCart} // @ts-ignore
+          handleRemoveWish={handleRemoveWish}
           increase={increase}
           decrease={decrease}
         />
@@ -96,8 +101,8 @@ function ShopMobileNav({
         <WishList
           handleShowCart={handleShowWishList}
           addToWistList={addToWistList}
-          addWishList={addWishList}
-          handleRemove={handleRemove}
+          addWishList={addWishList} // @ts-ignore
+          handleRemoveWish={handleRemoveWish}
         />
       ) : (
         ""

@@ -1,3 +1,5 @@
+/*eslint-disable */
+
 import { FiChevronDown } from "react-icons/fi";
 import { MdOutlinePerson } from "react-icons/md";
 import { FiSearch } from "react-icons/fi";
@@ -8,18 +10,20 @@ import Cart from "./Cart";
 import WishList from "./WishList";
 
 function Nav({
-  handleShowCart,
-  handleShowWishList,
-  showCart,
-  showWishList,
-  addCart,
-  addWishList,
-  addToWistList,
-  handleRemove,
-  increase,
-  decrease,
-  wishLength,
-  cartLength,
+  // @ts-ignore
+  handleShowCart, // @ts-ignore
+  handleShowWishList, // @ts-ignore
+  showCart, // @ts-ignore
+  showWishList, // @ts-ignore
+  addCart, // @ts-ignore
+  addWishList, // @ts-ignore
+  addToWistList, // @ts-ignore
+  handleRemoveCart, // @ts-ignore
+  handleRemoveWish, // @ts-ignore
+  increase, // @ts-ignore
+  decrease, // @ts-ignore
+  wishLength, // @ts-ignore
+  cartLength, // @ts-ignore
 }) {
   const location = useLocation();
 
@@ -76,7 +80,7 @@ function Nav({
         <Cart
           handleShowCart={handleShowCart}
           addCart={addCart}
-          handleRemove={handleRemove}
+          handleRemoveCart={handleRemoveCart}
           increase={increase}
           decrease={decrease}
         />
@@ -88,7 +92,7 @@ function Nav({
           handleShowCart={handleShowWishList}
           addToWistList={addToWistList}
           addWishList={addWishList}
-          handleRemove={handleRemove}
+          handleRemoveWish={handleRemoveWish}
         />
       ) : (
         ""

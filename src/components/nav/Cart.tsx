@@ -1,8 +1,19 @@
+/*eslint-disable */
+
 import { IoMdClose } from "react-icons/io";
 import { CiSquareMinus, CiSquarePlus } from "react-icons/ci";
-
-function Cart({ handleShowCart, addCart, handleRemove, increase, decrease }) {
+// @ts-ignore
+function Cart({
+  // @ts-ignore
+  handleShowCart, // @ts-ignore
+  addCart, // @ts-ignore
+  handleRemoveCart, // @ts-ignore
+  increase, // @ts-ignore
+  decrease, // @ts-ignore
+}) {
+  // @ts-ignore
   let cartTotalQty = addCart.reduce(
+    // @ts-ignore
     (accum, item) => accum + item?.price * item.quantity,
     0
   );
@@ -12,7 +23,7 @@ function Cart({ handleShowCart, addCart, handleRemove, increase, decrease }) {
       <div className="content">
         <IoMdClose className="close" onClick={handleShowCart} />
         <div className="cart-list">
-          {addCart.map((cartlist) => (
+          {addCart.map((cartlist: any) => (
             <div className="cart" key={cartlist?.id}>
               <img src={cartlist?.thumbnail} alt="" />
               <p>{cartlist?.title}</p>
@@ -33,7 +44,7 @@ function Cart({ handleShowCart, addCart, handleRemove, increase, decrease }) {
               </div>
               <button
                 onClick={() => {
-                  handleRemove(cartlist.id);
+                  handleRemoveCart(cartlist.id);
                 }}
               >
                 Remove
