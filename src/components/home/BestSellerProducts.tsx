@@ -48,7 +48,7 @@ function BestSellerProducts({ itemID }) {
       <div className="product-list">
         {product.map((products: any) => (
           <div key={products.id} onClick={() => itemID(products.id)}>
-            <img src={products.thumbnail} alt={product.title} />
+            <img src={products.thumbnail} alt={products.title} />
             <div className="details">
               <h5>{products.brand}</h5>
               <p>{products.title}</p>
