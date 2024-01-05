@@ -201,7 +201,7 @@ function App() {
           )}
         </>
       ) : (
-        <>
+        <div className="navbar">
           <Header />
           <Nav // @ts-ignore
             addToCart={addToCart}
@@ -219,7 +219,7 @@ function App() {
             wishLength={wishLength}
             cartLength={cartLength}
           />
-        </>
+        </div>
       )}
 
       <Routes>
