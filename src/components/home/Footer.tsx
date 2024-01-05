@@ -7,13 +7,13 @@ function Footer() {
         <div className="social-media">
           <h1>Bandage</h1>
           <div>
-            <a href="#">
+            <a href="#" aria-label="Facebook">
               <FaFacebook />
             </a>
-            <a href="#">
+            <a href="#" aria-label="Instagram">
               <FaInstagram />
             </a>
-            <a href="#">
+            <a href="#" aria-label="Twitter">
               <FaTwitter />
             </a>
           </div>
