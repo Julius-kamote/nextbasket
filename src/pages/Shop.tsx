@@ -4,14 +4,15 @@ import BestSellerProducts from "../components/home/BestSellerProducts";
 import Footer from "../components/home/Footer";
 import AdditionalInformation from "../components/shop/AdditionalInformation";
 import Product from "../components/shop/Product";
-// @ts-ignore
+
 function Shop({
-  product,
-  addToCart,
-  addToWistList,
-  itemID,
-  addCart,
-  productID,
+  // @ts-ignore
+  product, // @ts-ignore
+  addToCart, // @ts-ignore
+  addToWistList, // @ts-ignore
+  itemID, // @ts-ignore
+  addCart, // @ts-ignore
+  productID, // @ts-ignore
   addWishList,
 }) {
   return (

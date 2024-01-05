@@ -9,17 +9,19 @@ import { FaEye } from "react-icons/fa";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 // @ts-ignore
 function Product({
-  product,
-  addToCart,
-  addToWistList,
-  id,
-  title,
-  thumbnail,
-  addCart,
-  productID,
-  addWishList,
+  // @ts-ignore
+  product, // @ts-ignore
+  addToCart, // @ts-ignore
+  addToWistList, // @ts-ignore
+  id, // @ts-ignore
+  title, // @ts-ignore
+  thumbnail, // @ts-ignore
+  addCart, // @ts-ignore
+  productID, // @ts-ignore
+  addWishList, // @ts-ignore
 }) {
-  let addedCart = addCart.some((item) => item.id === productID);
+  // @ts-ignore
+  let addedCart = addCart.some((item) => item.id === productID); // @ts-ignore
   let addedWish = addWishList.some((item) => item.id === productID);
 
   return (
