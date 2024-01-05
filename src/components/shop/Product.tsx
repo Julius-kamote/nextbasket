@@ -8,7 +8,20 @@ import { BsCart } from "react-icons/bs";
 import { FaEye } from "react-icons/fa";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 // @ts-ignore
-function Product({ product, addToCart, addToWistList, id, title, thumbnail }) {
+function Product({
+  product,
+  addToCart,
+  addToWistList,
+  id,
+  title,
+  thumbnail,
+  addCart,
+  productID,
+  addWishList,
+}) {
+  let addedCart = addCart.some((item) => item.id === productID);
+  let addedWish = addWishList.some((item) => item.id === productID);
+
   return (
     <div className="product-container">
       <div className="breadcrumbs">
@@ -69,17 +82,23 @@ function Product({ product, addToCart, addToWistList, id, title, thumbnail }) {
 
           <div className="cta">
             <button className="option">Select Options</button>
-            <button className="btn" type="button">
+            <button
+              className={addedWish ? "btn added" : "btn"}
+              type="button"
+              disabled={addedWish}
+            >
               <FaRegHeart
                 onClick={() => {
                   addToWistList(product.id);
                 }}
               />
             </button>
-            <button className="btn" type="button">
+            <button
+              className={addedCart ? "btn added" : "btn"}
+              type="button"
+              disabled={addedCart}
+            >
               <BsCart
-                type="button"
-                disabled
                 onClick={() => {
                   addToCart(product.id);
                 }}

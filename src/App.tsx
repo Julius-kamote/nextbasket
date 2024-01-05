@@ -83,7 +83,7 @@ function App() {
   const addToCart = (id) => {
     setAddCart([...addCart, product]);
     toast("Item Successfully Added!"); // @ts-ignore
-    addCart.filter((item) => {
+    addCart.some((item) => {
       item.id !== id
         ? setAddCart([...addCart, product])
         : setAddCart([...addCart]);
@@ -231,6 +231,9 @@ function App() {
               product={product}
               addToCart={addToCart}
               addToWistList={addToWistList}
+              addCart={addCart}
+              addWishList={addWishList}
+              productID={productID}
             />
           }
         ></Route>
