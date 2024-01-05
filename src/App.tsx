@@ -63,6 +63,7 @@ function App() {
   const itemID = (id) => {
     setproductID(id);
     navigate("/shop");
+    window.scrollTo(0, 0);
   };
 
   const getData = async () => {
